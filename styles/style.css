@@ -1,10 +1,7 @@
-/*вспомогательные классы */
 
 .shadow-decor {
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
-
-/*глобальные компоненты */
 
 .page {
   color: var(--text-color, #f1b2ce);
@@ -12,7 +9,8 @@
   font-size: 18px;
   line-height: 23.4px;
   background-color: var(--page-background-color, #000028);
-  background-image: var(--page-background-image,
+  background-image: var(
+    --page-background-image,
     url("../images/cover-image.png")
   );
   background-position: center;
@@ -219,6 +217,7 @@
 .footer {
   place-items: center;
 }
+
 
 
 @media (width >= 768px) {
