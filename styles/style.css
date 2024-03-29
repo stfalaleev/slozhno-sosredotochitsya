@@ -21,7 +21,7 @@
 .cover {
   display: grid;
   padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  min-block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -80,6 +80,7 @@
 
 .rec-decor::before {
   content: "REC";
+  text-transform: uppercase;
   color: var(--accent-color, #ff0070);
   line-height: 24px;
 }
@@ -88,7 +89,7 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   background: var(--accent-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
@@ -267,7 +268,7 @@
   }
 
   .header__theme-menu {
-    margin-block-start: 170px;
+    margin-block-start: 100vh;
     margin-block-end: 70px;
   }
 
