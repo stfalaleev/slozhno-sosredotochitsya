@@ -113,6 +113,7 @@
 
 .title-decor {
   color: var(--highlight-color, #000028);
+  font-weight: 400;
   background: var(--accent-color, #ff0070);
 }
 
@@ -126,6 +127,8 @@
 }
 
 .section-how__title {
+  color: var(--highlight-color, #000028);
+  font-weight: 700;
   margin-block-end: 20px;
 }
 
