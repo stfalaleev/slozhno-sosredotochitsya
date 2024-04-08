@@ -130,6 +130,7 @@
 }
 
 .main__section-title {
+  font-size: 17px;
   color: var(--title-color, #353430);
 }
 
