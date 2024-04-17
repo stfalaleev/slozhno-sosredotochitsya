@@ -20,7 +20,7 @@
   grid-template-rows: 1fr auto 1fr auto;
   justify-items: end;
   align-items: start;
-  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  padding: var(--general-padding, 20px);
   block-size: 100vh;
   min-block-size: 668px;
 }
