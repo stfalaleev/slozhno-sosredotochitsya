@@ -21,7 +21,7 @@
   justify-items: end;
   align-items: start;
   padding: var(--general-padding, 10px);
-  block-size: max (100vh, 668px);
+  block-size: 100vh;
 }
 
 .header__bulb {
