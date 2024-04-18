@@ -191,7 +191,8 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer::before {
