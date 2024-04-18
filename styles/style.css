@@ -21,8 +21,7 @@
   justify-items: end;
   align-items: start;
   padding: var(--general-padding, 10px);
-  block-size: 100vh;
-  min-block-size: 668px;
+  block-size: max(100vb, 668px);
 }
 
 .header__bulb {
@@ -132,7 +131,7 @@
 }
 
 .main__section-title {
-  font-size: 17px;
+  font-size: 18px;
   color: var(--title-color, #353430);
 }
 
@@ -191,8 +190,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: var(--general-padding, 10px);
-  block-size: 100vh;
-  min-block-size: 668px;
+  block-size: max(100vb, 668px);
 }
 
 .footer::before {
