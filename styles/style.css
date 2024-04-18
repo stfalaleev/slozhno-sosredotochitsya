@@ -145,6 +145,8 @@
   color: var(--title-decor-color, #353430);
   font-weight: 700;
   background-color: var(--accent-color, #ff8dcb);
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .regular {
