@@ -52,7 +52,6 @@
   block-size: 25px;
   inline-size: 25px;
   inset-inline-start: var(--general-padding, 10px);
-
 }
 
 .header::before {
@@ -118,15 +117,12 @@
 
 /*Блок main */ 
 
-
 .main {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: var(--main-gap, 50px);
   padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
-
 }
-
 
 .main__section {
   display: grid;
@@ -238,7 +234,6 @@
     justify-self: end;
     grid-auto-columns: 1fr min-content;
     padding-top: 172px;
-
   }
 
   :root {
@@ -301,10 +296,10 @@
 }
 
 @media (width >= 1024px) {
-  :root { 
-    --menu-margin: 0; 
+  :root {
+    --menu-margin: 0;
     --promo-margin: 114px;
-  } 
+  }
 
   .header__theme-menu {
     display: grid;
