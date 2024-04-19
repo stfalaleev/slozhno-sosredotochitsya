@@ -227,8 +227,9 @@
   }
 }
 
-@media (width >= 768px) {}
-
+@media (width >= 768px) {
+  @media (width < 1024px) { 
+    
   .header__theme-menu {
     display: grid;
     justify-self: end;
@@ -293,6 +294,9 @@
   .gallery-image:nth-of-type(3) {
     grid-row: span 2;
   }
+  
+  }
+
 }
 
 @media (width >= 1024px) {
