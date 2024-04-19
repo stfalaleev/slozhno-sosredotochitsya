@@ -38,35 +38,34 @@
   content: '';
   border-radius: 50%;
   background-color: var(--accent-color, #ff0070);
-  filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
+  filter: box-shadow 0 0 4px 2px var(--accent-color, #ff0070);
   block-size: 9px;
   inline-size: 9px;
 }
-
-.header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-  inset-inline-end: var(--general-padding, 10px);
-  inset-block-start: var(--general-padding, 10px);
+/*
+.decorated-zone:after {
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  border-inline-start: 1px solid var(--menu-color, #353430); 
+  border-block-end: 1px solid var(--menu-color, #353430); 
+  block-size: 25px; 
+  inline-size: 25px; 
+  inset-inline-start: var(--general-padding, 10px); 
 }
 
-.header::after {
-  content: '';
-  position: absolute;
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-  inset-inline-start: var(--general-padding, 10px);
-  inset-block-end: var(--general-padding, 10px);
+.decorated-zone:before {
+  content: ''; 
+  position: absolute; 
+  display: block; 
+  border-inline-end: 1px solid var(--menu-color, #353430); 
+  border-block-start: 1px solid var(--menu-color, #353430); 
+  block-size: 25px; 
+  inline-size: 25px; 
+  inset-inline-end: var(--general-padding, 10px); 
+  inset-block-start: var(--general-padding, 10px); 
 }
-
+*/
 .header__theme-menu {
   margin-block-start: var(--menu-margin, 65px);
 }
@@ -119,9 +118,9 @@
 /*Блок main */ 
 
 .main {
-  display: flex;
-  flex-direction: column;
-  gap: var(--main-gap, 50px);
+  display: flex; 
+  flex-direction: column; 
+  gap: var(--main-gap, 50px); 
   padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
 }
 
@@ -230,10 +229,15 @@
 
 @media (width >= 768px) {
   @media (width < 1024px) {
-    :root {
-      --menu-margin: 172px;
-      --promo-margin: 162px;
-    }
+   
+  }
+
+  .header__theme-menu {
+    display: grid;
+    justify-self: end;
+    grid-auto-columns: 1fr min-content;
+    padding-top: 172px;
+
   }
 
   :root {
@@ -242,6 +246,9 @@
     --main-gap: 80px;
   }
 
+  .header__promo {
+    margin-top: 162px;
+  }
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
