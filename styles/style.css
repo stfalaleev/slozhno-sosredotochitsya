@@ -44,26 +44,27 @@
 }
 
 .header::after {
-  content: ''; 
-  position: absolute; 
-  display: block; 
-  border-inline-start: 1px solid var(--menu-color, #353430); 
-  border-block-end: 1px solid var(--menu-color, #353430); 
-  block-size: 25px; 
-  inline-size: 25px; 
-  inset-inline-start: var(--general-padding, 10px); 
+  content: '';
+  position: absolute;
+  display: block;
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
+  inset-inline-start: var(--general-padding, 10px);
+
 }
 
 .header::before {
-  content: ''; 
-  position: absolute; 
-  display: block; 
-  border-inline-end: 1px solid var(--menu-color, #353430); 
-  border-block-start: 1px solid var(--menu-color, #353430); 
-  block-size: 25px; 
-  inline-size: 25px; 
-  inset-inline-end: var(--general-padding, 10px); 
-  inset-block-start: var(--general-padding, 10px); 
+  content: '';
+  position: absolute;
+  display: block;
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+  block-size: 25px;
+  inline-size: 25px;
+  inset-inline-end: var(--general-padding, 10px);
+  inset-block-start: var(--general-padding, 10px);
 }
 
 .header__theme-menu {
@@ -117,12 +118,15 @@
 
 /*Блок main */ 
 
-.main { 
-  display: flex; 
+
+.main {
+  display: flex;
   flex-direction: column; 
-  gap: var(--main-gap, 50px); 
-  padding: var(--main-padding-block, 40px) var(--general-padding, 10px); 
+  gap: var(--main-gap, 50px);
+  padding: var(--main-padding-block, 40px) var(--general-padding, 10px);
+
 }
+
 
 .main__section {
   display: grid;
@@ -293,12 +297,13 @@
   .gallery-image:nth-of-type(3) {
     grid-row: span 2;
   }
+
 }
 
 @media (width >= 1024px) {
   :root { 
     --menu-margin: 0; 
-    --promo-margin: 114px; 
+    --promo-margin: 114px;
   } 
 
   .header__theme-menu {
