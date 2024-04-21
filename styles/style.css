@@ -43,7 +43,7 @@
   inline-size: 9px;
 }
 
-.header::after {
+.decorated-zone::after {
   content: '';
   position: absolute;
   display: block;
@@ -54,7 +54,7 @@
   inset-inline-start: var(--general-padding, 10px);
 }
 
-.header::before {
+.decorated-zone::before {
   content: '';
   position: absolute;
   display: block;
