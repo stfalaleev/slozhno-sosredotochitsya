@@ -230,8 +230,8 @@
 @media (width >= 768px) {
 
   .header__theme-menu {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    justify-self: end;
     padding-top: 172px;
   }
 
