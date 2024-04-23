@@ -38,32 +38,35 @@
   content: '';
   border-radius: 50%;
   background-color: var(--accent-color, #ff0070);
-  filter: box-shadow 0 0 4px 2px var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   block-size: 9px;
   inline-size: 9px;
 }
+.decorated-zone {
+  position: relative;
+}
 
+.decorated-zone::before,
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
+  z-index: -1;
   inline-size: 25px;
-  inset-inline-start: var(--general-padding, 10px);
+  block-size: 25px;
 }
 
 .decorated-zone::before {
-  content: '';
-  position: absolute;
-  display: block;
   border-inline-end: 1px solid var(--menu-color, #353430);
   border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-  inset-inline-end: var(--general-padding, 10px);
-  inset-block-start: var(--general-padding, 10px);
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .header__theme-menu {
@@ -194,7 +197,7 @@
   block-size: max(100vb, 668px);
 }
 
-.footer::before {
+.decor-zone::before {
   content: '';
   display: block;
   justify-self: end;
@@ -204,7 +207,7 @@
   inline-size: 25px;
 }
 
-.footer::after {
+.decor-zone::after {
   content: '';
   display: block;
   border-inline-start: 1px solid var(--menu-color, #353430);
@@ -237,8 +240,9 @@
 
   .header__theme-menu {
     display: grid;
-    justify-self: end;
-    padding-top: 172px;
+    align-self:flex-end;
+    grid-template-rows: 1fr min-content 2fr;
+    
   }
   
   .header__promo {
@@ -303,7 +307,7 @@
   .header__theme-menu {
     display: grid;
     justify-self: center;
-    padding-top: 6px;
+    grid-template-rows: 1fr min-content 19fr;
   }
 
   .header__theme-menu-list {
