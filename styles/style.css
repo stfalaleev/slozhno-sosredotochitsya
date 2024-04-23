@@ -42,6 +42,7 @@
   block-size: 9px;
   inline-size: 9px;
 }
+
 .decorated-zone {
   position: relative;
 }
@@ -240,9 +241,8 @@
 
   .header__theme-menu {
     display: grid;
-    align-self:flex-end;
+    align-self: flex-end;
     grid-template-rows: 1fr min-content 2fr;
-    
   }
   
   .header__promo {
@@ -305,9 +305,9 @@
   }
 
   .header__theme-menu {
-    display: grid;
+    justify-items: stretch;
     justify-self: center;
-    grid-template-rows: 1fr min-content 19fr;
+    grid-template-rows: 1fr 430px 1fr;
   }
 
   .header__theme-menu-list {
