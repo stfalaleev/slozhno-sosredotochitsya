@@ -246,7 +246,7 @@
   }
   
   .header__promo {
-    margin-top: 95px;
+    margin-top: 140px;
   }
 
   .decorations {
@@ -319,6 +319,7 @@
   }
 
   .header__promo {
+    margin-top: 95px;
     max-inline-size: 491px;
   }
 
