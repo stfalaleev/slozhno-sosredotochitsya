@@ -306,7 +306,7 @@
 
   .header__theme-menu {
     justify-self: center;
-    grid-template-rows: 350px auto;
+    grid-template-rows: 315px auto;
   }
 
   .header__theme-menu-list {
