@@ -327,7 +327,6 @@
   }
 
   .factors .main__section-content {
-    display: block;
     grid-column: span 1;
     grid-row: 2/3;
   }
