@@ -246,7 +246,7 @@
   }
   
   .header__promo {
-    margin-top: 162px;
+    margin-top: 100px;
   }
 
   .decorations {
@@ -328,6 +328,7 @@
   }
 
   .factors .main__section-content {
+    display: block;
     grid-column: span 1;
     grid-row: 2/3;
   }
