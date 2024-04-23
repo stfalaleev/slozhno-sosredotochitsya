@@ -246,7 +246,7 @@
   }
   
   .header__promo {
-    margin-top: 150px;
+    margin-top: 95px;
   }
 
   .decorations {
@@ -306,7 +306,7 @@
 
   .header__theme-menu {
     justify-self: center;
-    grid-template-rows: 320px auto;
+    grid-template-rows: 313px auto;
   }
 
   .header__theme-menu-list {
