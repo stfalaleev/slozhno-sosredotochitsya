@@ -325,6 +325,10 @@
   .main__section {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  .factors {
+    display: block;
+  }
 
   .factors .main__section-content {
     grid-column: span 1;
