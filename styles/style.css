@@ -49,6 +49,7 @@
 .decorated-zone::before,
 .decorated-zone::after {
   content: "";
+  display: block;
   position: absolute;
   z-index: -1;
   inline-size: 25px;
@@ -192,6 +193,7 @@
 
 .footer {
   display: grid;
+  grid-template-rows: 1fr auto auto; 
   padding: var(--general-padding, 10px);
   block-size: max(100vb, 668px);
 }
