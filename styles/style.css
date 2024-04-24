@@ -11,7 +11,6 @@
   background-attachment: fixed;
 }
 
-
 /*Блок header */ 
 
 .header {
@@ -49,9 +48,9 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
-  content: "";
+  content: '';
   position: absolute;
-  z-index: -1;
+  display: block;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -59,15 +58,15 @@
 .decorated-zone::before {
   border-inline-end: 1px solid var(--menu-color, #353430);
   border-block-start: 1px solid var(--menu-color, #353430);
-  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-inline-end: var(--general-padding, 10px);
+  inset-block-start: var(--general-padding, 10px);
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  border-inline-end: 1px solid var(--menu-color, #353430);
+  border-block-start: 1px solid var(--menu-color, #353430);
+  inset-inline-end: var(--general-padding, 10px);
+  inset-block-start: var(--general-padding, 10px);
 }
 
 .header__theme-menu {
@@ -193,28 +192,8 @@
 
 .footer {
   display: grid;
-  grid-template-rows: auto 1fr auto;
   padding: var(--general-padding, 10px);
   block-size: max(100vb, 668px);
-}
-
-.decor-zone::before {
-  content: '';
-  display: block;
-  justify-self: end;
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
-}
-
-.decor-zone::after {
-  content: '';
-  display: block;
-  border-inline-start: 1px solid var(--menu-color, #353430);
-  border-block-end: 1px solid var(--menu-color, #353430);
-  block-size: 25px;
-  inline-size: 25px;
 }
 
 .footer .decorations {
@@ -232,21 +211,10 @@
 }
 
 @media (width >= 768px) {
-
-  :root {
-    --general-padding: 20px;
-    --main-padding-block: 60px;
-    --main-gap: 80px;
-  }
-
   .header__theme-menu {
-    display: grid;
-    align-self: flex-end;
-    grid-template-rows: 1fr 70px 1fr;
-  }
-  
-  .header__promo {
-    margin-top: 162px;
+    display: flex;
+    justify-self: flex-end;
+    align-self:center;
   }
 
   .decorations {
@@ -301,12 +269,11 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
-    --promo-margin: 114px;
   }
 
   .header__theme-menu {
     justify-self: center;
-    grid-template-rows: 313px auto;
+    align-self:self-start;
   }
 
   .header__theme-menu-list {
