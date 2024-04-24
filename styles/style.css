@@ -48,25 +48,25 @@
 
 .decorated-zone::before,
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
-  display: block;
+  z-index: -1;
   inline-size: 25px;
   block-size: 25px;
-}
+} 
 
 .decorated-zone::before {
   border-inline-end: 1px solid var(--menu-color, #353430);
   border-block-start: 1px solid var(--menu-color, #353430);
   inset-inline-end: var(--general-padding, 10px);
   inset-block-start: var(--general-padding, 10px);
-}
+} 
 
 .decorated-zone::after {
-  border-inline-end: 1px solid var(--menu-color, #353430);
-  border-block-start: 1px solid var(--menu-color, #353430);
-  inset-inline-end: var(--general-padding, 10px);
-  inset-block-start: var(--general-padding, 10px);
+  border-inline-start: 1px solid var(--menu-color, #353430);
+  border-block-end: 1px solid var(--menu-color, #353430);
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .header__theme-menu {
