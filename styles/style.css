@@ -49,7 +49,6 @@
 .decorated-zone::before,
 .decorated-zone::after {
   content: "";
-  display: block;
   position: absolute;
   z-index: -1;
   inline-size: 25px;
@@ -216,7 +215,7 @@
   .header__theme-menu {
     display: flex;
     justify-self: flex-end;
-    align-self:center;
+    align-self: center;
   }
 
   .decorations {
@@ -275,7 +274,7 @@
 
   .header__theme-menu {
     justify-self: center;
-    align-self:self-start;
+    align-self: start;
   }
 
   .header__theme-menu-list {
@@ -298,7 +297,7 @@
 
   .factors .main__section-content {
     grid-column: span 1;
-    grid-row: 2/3;
+    grid-row: 3/3;
   }
 
   .main__section.gallery {
