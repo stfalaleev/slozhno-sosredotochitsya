@@ -309,7 +309,7 @@
 
   .factors .main__section-content {
     grid-column: span 1;
-    grid-row: 3/3;
+    grid-row: 2/3;
   }
 
   .main__section.gallery {
