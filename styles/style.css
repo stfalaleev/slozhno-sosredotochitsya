@@ -212,11 +212,12 @@
 }
 
 @media (width >= 768px) {
+  /*
   .header__theme-menu {
     display: flex;
     justify-self: flex-end;
     align-self: center;
-  }
+  }*/
 
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -264,18 +265,17 @@
   .gallery-image:nth-of-type(3) {
     grid-row: span 2;
   }
-
 }
 
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
   }
-
+  /*
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-  }
+  }*/
 
   .header__theme-menu-list {
     flex-direction: row;
