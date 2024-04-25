@@ -42,13 +42,9 @@
 
 .cover {
   padding: var(--general-padding, 10px);
-  block-size: 100vh;
-  min-block-size: 668px;
+  block-size: max(100vb, 668px);
 }
 
-.decorated-zone {
-  position: relative;
-}
 
 .decorated-zone::before,
 .decorated-zone::after {
