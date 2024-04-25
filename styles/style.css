@@ -197,8 +197,6 @@
 .footer {
   display: grid;
   grid-template-rows: 1fr auto auto; 
-  padding: var(--general-padding, 10px);
-  block-size: max(100vb, 668px);
 }
 
 .footer .decorations {
