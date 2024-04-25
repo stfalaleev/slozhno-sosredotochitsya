@@ -213,22 +213,23 @@
 }
 
 @media (width >= 768px) {
-  :root { 
-    --general-padding: 20px; 
-    --main-padding-block: 60px; 
-    --main-gap: 80px; 
+  :root {
+    --general-padding: 20px;
+    --main-padding-block: 60px;
+    --main-gap: 80px;
+    --promo-margin: 114px;
   }
   
   .header__theme-menu {
     display: flex;
-    justify-self: flex-end;
+    justify-self: end;
     align-self: center;
   }
 
-  .header__promo { 
-    justify-self: flex-end;
-    align-self: center;
-  } 
+  .header__promo {
+    justify-self: end;
+    align-self: start;
+  }
 
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -281,7 +282,6 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
-    --promo-margin: 114px;
   }
   
   .header__theme-menu {
