@@ -225,6 +225,11 @@
     align-self: center;
   }
 
+  .header__promo { 
+    justify-self: flex-end;
+    align-self: center;
+  } 
+
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -276,6 +281,7 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
+    --promo-margin: 114px;
   }
   
   .header__theme-menu {
