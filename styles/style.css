@@ -45,6 +45,9 @@
   block-size: max(100vb, 668px);
 }
 
+.decorated-zone {
+  position: relative;
+}
 
 .decorated-zone::before,
 .decorated-zone::after {
@@ -210,6 +213,11 @@
 }
 
 @media (width >= 768px) {
+  :root { 
+    --general-padding: 20px; 
+    --main-padding-block: 60px; 
+    --main-gap: 80px; 
+  }
   
   .header__theme-menu {
     display: flex;
@@ -268,7 +276,6 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
-    --promo-margin: 114px;
   }
   
   .header__theme-menu {
