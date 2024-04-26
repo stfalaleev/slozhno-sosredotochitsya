@@ -180,7 +180,7 @@
 }
 
 .gallery {
-  gap: 10px;
+  gap: 20px;
 }
 
 .gallery-image {
@@ -232,7 +232,7 @@
 
   .header__promo {
     justify-self: end;
-    align-self: start;
+    align-self: center;
   }
 
   .decorations {
