@@ -17,6 +17,8 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
+  justify-items: end;
+  align-items: start;
 }
 
 .header__bulb {
