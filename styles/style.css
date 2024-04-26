@@ -221,7 +221,7 @@
     --general-padding: 20px;
     --main-padding-block: 60px;
     --main-gap: 80px;
-    --promo-margin: 157px;
+    --promo-margin: 158px;
   }
   
   .header__theme-menu {
@@ -303,7 +303,7 @@
   }
 
   .header__promo {
-    margin-top: 123px;
+    margin-top: 122px;
     max-inline-size: 491px;
   }
 
