@@ -231,9 +231,8 @@
   }
 
   .header__promo {
-    display: grid;
     justify-self: end;
-    align-self: center;
+    align-self: start;
   }
 
   .decorations {
