@@ -132,7 +132,7 @@
 
 .main__section {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 .main__section-title {
@@ -177,6 +177,10 @@
 
 .main__section.gallery {
   grid-template-rows: auto 142px 355px 237px 355px 237px;
+}
+
+.gallery {
+  gap: 10px;
 }
 
 .gallery-image {
