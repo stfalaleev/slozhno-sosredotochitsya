@@ -221,6 +221,7 @@
     --general-padding: 20px;
     --main-padding-block: 60px;
     --main-gap: 80px;
+    --menu-margin: 90px;
     --promo-margin: 158px;
   }
   
@@ -286,6 +287,7 @@
 @media (width >= 1024px) {
   :root {
     --menu-margin: 0;
+    --promo-margin: 120px;
   }
   
   .header__theme-menu {
@@ -303,7 +305,8 @@
   }
 
   .header__promo {
-    margin-top: 122px;
+    justify-self: end;
+    align-self: start;
     max-inline-size: 491px;
   }
 
