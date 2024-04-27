@@ -143,6 +143,7 @@
 .main__section-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -316,7 +317,7 @@
 
   .factors .main__section-content {
     grid-column: span 1;
-    grid-row: 2/3;
+    grid-row: 2/2;
   }
 
   .main__section.gallery {
